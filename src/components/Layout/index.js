@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import "../layout.css"
+import "../../../node_modules/animate.css/animate.min.css"
 import Footer from "../Footer"
 import Header from "../Header"
 
@@ -8,9 +9,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header></Header>
-      <main class="l-main">
-      {children}
-      </main>
+      <main class="l-main">{children}</main>
       <Footer></Footer>
     </>
   )
