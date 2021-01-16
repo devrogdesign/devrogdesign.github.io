@@ -277,6 +277,21 @@ img {
 .header--hidden {
   transform:translateY(-100%);
 }
+/*=== Resolucion CELULARES, transforma el navbar en mobile ===*/
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding-top: 1.5rem;
+    text-align: center;
+    background-color: #000;
+    transition: .4s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    border-radius: 0 0 1rem 1rem;
+  }
+}
 
 .nav__item {
   margin-bottom: var(--mb-3);
@@ -288,7 +303,7 @@ img {
 }
 
 .nav__link:hover {
-  color: var(--first-color-light);
+  color: var(--secondary-color);
 }
 
 .nav__logo {
@@ -298,14 +313,8 @@ img {
   background-image: url("../../static/assets/img/logo.svg");
 }
 
-.nav__logo,
-.nav_toggle {
-  color: var(--first-color-lighten);
-}
-
 .nav__toggle {
-  font-size: 2rem;
-  cursor: pointer;
+  cursor:pointer;
 }
 
 /* Show menu */
@@ -313,22 +322,6 @@ img {
   top: var(--header-height);
 }
 
-
-/* Change background header */
-.scroll-header {
-  background-color: var(--primary-color);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
-}
-
-.scroll-header .nav__logo,
-.scroll-header .nav__toggle,
-.scroll-header .nav__link {
-  color: var(--first-color-dark);
-}
-
-.scroll-header .nav__menu {
-  background-color: var(--first-color-lighten);
-}
 
 /*===== SCROLL TOP =====*/
 .scrolltop {
@@ -794,22 +787,6 @@ color: var(--text-color);
 
 /*===== MEDIA QUERIES =====*/
 
-/*=== Resolucion CELULARES, transforma el navbar en mobile ===*/
-@media screen and (max-width: 768px) {
-  .nav__menu {
-    position: fixed;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    padding-top: 1.5rem;
-    text-align: center;
-    background-color: #000;
-    transition: .4s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
-    border-radius: 0 0 1rem 1rem;
-  }
-}
-
 /*=== Resolucion CELULARES ===*/
 @media screen and (min-width: 280px){ 
 }
@@ -833,7 +810,7 @@ color: var(--text-color);
 }
 
 /*=== Resolucion IPAD ===*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   body {
     margin: 0;
   }

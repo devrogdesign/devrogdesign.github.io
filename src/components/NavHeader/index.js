@@ -1,49 +1,36 @@
 import React from "react"
 import { Link } from "gatsby"
+import Content from "./content"
 
-const NavHeader = () => (
-  <nav className="nav bd-container">
-    <span href="#" className="nav__logo"></span>
+const NavHeader = () => {
+    const state = { clicked: false }
 
-    <div className="nav__menu" id="nav-menu">
-      <ul className="nav__list">
-        <li className="nav__item">
-          <Link to="/" className="nav__link active-link">
-            Home
-          </Link>
-        </li>
-        <li className="nav__item">
-          <Link to="#my-story" className="nav__link">
-            My story
-          </Link>
-        </li>
-        <li className="nav__item">
-          <Link to="#my-works" className="nav__link">
-            My works
-          </Link>
-        </li>
-        <li className="nav__item">
-          <Link to="#as-work" className="nav__link">
-            As work
-          </Link>
-        </li>
-        <li className="nav__item">
-          <Link to="#resume" className="nav__link">
-            Resume
-          </Link>
-        </li>
-        <li className="nav__item">
-          <Link to="/contact-us" className="nav__link">
-            Contact
-          </Link>
-        </li>
-      </ul>
-    </div>
+    const handleClick = () => {
+    this.setState({ clicked: !state.clicked })
+  }
 
-    <div className="nav__toggle" id="nav-toggle">
-      <i className="bx bx-menu"></i>
-    </div>
-  </nav>
-)
+  return (
+    <nav className="nav bd-container">
+      <span href="#" className="nav__logo"></span>
+      
+      <div className="nav__menu" id="nav-menu">
+        <ul className="nav__list">
+          {Content.map((item, index) => (
+            <li key={index} className="nav__item">
+              <Link to={item.url} className="nav__link">
+                {item.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="nav__toggle" id="nav-toggle">
+      <div className="box__icon">
+        <box-icon name="menu-alt-right" type="regular" color="#010101" size="1.2rem"></box-icon>
+        </div>
+      </div>
+    </nav>
+  )
+}
 
 export default NavHeader
