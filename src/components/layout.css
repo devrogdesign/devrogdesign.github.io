@@ -33,7 +33,7 @@
 /*===== VARIABLES CSS =====*/
 :root {
   --space-unit:  1em;
-  --header-height: 3rem;
+  --header-height: 4.68rem;
 
   
   /*===== Colors =====*/
@@ -277,39 +277,91 @@ img {
   transform:translateY(-100%);
 }
 /*=== Resolucion CELULARES, transforma el navbar en mobile ===*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 830px) {
   .nav__menu {
     position: absolute;
     top: var(--header-height);
     right: -100%;
-    width: 100%;
+    min-width: 60%;
+    height: 100vh;
     padding-top: 1.5rem;
     text-align: center;
     background-color: #000;
-    transition: .4s;
+    transition: all .5s ease-in-out;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
     border-radius: 0 0 1rem 1rem;
   }
   .nav__menu.active {
-    background: #6668f4;
-    left: 0;
+    background: var(--primary-color);
+    right: 0;
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
     z-index: 1;
 }
 }
 
+.nav__overlay {
+  background-color: hsla(0,0%,100%,.75);
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  transition: all .5s ease-in-out;
+}
+
+.nav__overlay.active {
+  visibility: visible;
+  opacity: 1;
+  transition: all .5s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+  .nav__menu {
+    min-width: 100%;
+  }
+}
 .nav__item {
   margin-bottom: var(--mb-3);
 }
 
 .nav__link {
+  font-weight: var(--font-medium);
   color: var(--black-color);
   transition: .3s;
 }
 
-.nav__link:hover {
+.nav__link.anim-destination {
+display: inline-block;
+overflow: hidden;
+padding-right: 0.5em;
+}
+
+.nav__link.anim-destination span {
+position: relative;
+display: inline-block;
+-webkit-transition: -webkit-transform 0.3s;
+transition: transform 0.3s;
+}
+
+.nav__link.anim-destination span::before {
+position: absolute;
+white-space: nowrap;	
+top: 100%;
+content: attr(data-hover);
+font-weight: 500;
+}
+
+.nav__link.anim-destination:hover span,
+.nav__link.anim-destination:focus span {
   color: var(--secondary-color);
+-webkit-transform: translateY(-100%);
+transform: translateY(-100%);
 }
 
 .nav__logo {
@@ -322,12 +374,6 @@ img {
 .nav__toggle {
   cursor:pointer;
 }
-
-/* Show menu */
-.show-menu {
-  top: var(--header-height);
-}
-
 
 /*===== SCROLL TOP =====*/
 .scrolltop {
@@ -816,14 +862,7 @@ color: var(--text-color);
 }
 
 /*=== Resolucion IPAD ===*/
-@media screen and (min-width: 769px) {
-  body {
-    margin: 0;
-  }
-
-  .nav {
-    height: calc(var(--header-height) + 1.5rem);
-  }
+@media screen and (min-width: 831px) {
 
   .nav__list {
     display: flex;
@@ -838,6 +877,11 @@ color: var(--text-color);
     display: none;
   }
 
+}
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
   .home__container {
     padding-top: 200px;
   }

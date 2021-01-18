@@ -21,8 +21,8 @@ class NavHeader extends Component {
             <ul className="nav__list">
               {Content.map((item, index) => (
                 <li key={index} className="nav__item">
-                  <Link to={item.url} className="nav__link">
-                    {item.title}
+                  <Link to={item.url} className="nav__link anim-destination">
+                    <span data-hover={item.dataHover}>{item.title}</span>
                   </Link>
                 </li>
               ))}
@@ -33,6 +33,8 @@ class NavHeader extends Component {
             <box-icon name={this.state.clicked ? "x" : "menu-alt-right"} type="regular" color="#010101" size="1.2rem"></box-icon>
             </div>
           </div>
+          
+        <div className={this.state.clicked ? "nav__overlay active" : "nav__overlay"}></div>
         </nav>
       )
   }
