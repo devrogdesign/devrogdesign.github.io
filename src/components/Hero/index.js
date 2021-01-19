@@ -1,5 +1,5 @@
 import React from "react"
-import HomeImg from "../../../static/assets/img/aquivoyyo.jpg"
+import HomeImg from "../../../static/assets/img/img2.png"
 import Button from "../Button"
 
 const Hero = () => (
