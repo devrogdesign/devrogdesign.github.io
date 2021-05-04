@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "portfolio-devrog-starter",
   siteMetadata: {
     title: `Devrog`,
     description: `Portfolio Devrog | UI Designer & Web Developer`,
