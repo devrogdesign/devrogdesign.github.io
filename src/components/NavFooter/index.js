@@ -1,114 +1,75 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import Content from "./content"
+ 
 const NavFooter = () => (
   <div className="footer__container bd-grid">
     <div className="footer__content">
-      <span href="#" className="nav__logo footer__logo"></span>
+      <Link to="/#">
+      <span className="nav__logo footer__logo"></span>
+      </Link>
+      
       <span className="footer__description">
-        Designing new experiences that make an impact.
+        Diseñando nuevas experiencias que causen impacto.
       </span>
       <div className="footer__copy_container">
         <p className="footer__copy">
           &#169; 2020 Rodrigo García. All right reserved.
         </p>
         <p className="footer__copy">
-          Designer & Coded with. <i className="bx bx-heart"></i>{" "}
-          <span>devrogdesign</span>
+          Designer & Coded with <box-icon
+              name="heart"
+              type="regular"
+              color="#2423FA"
+              size="16px"
+            ></box-icon>{" by "} 
+            <Link to='/#'><span className="font-medium">devrogdesign</span></Link>
         </p>
       </div>
     </div>
 
     <div className="footer__content">
-      <h3 className="footer__title">Contact</h3>
+      <h3 className="footer__title">Contacto</h3>
       <ul>
-        <li>
-          <a href="#contact" className="footer__link">
-            hello@devrog.design
-          </a>
-        </li>
-        <li>
-          <a href="#contact" className="footer__link">
-            +591 (768) 030 87
-          </a>
-        </li>
+          <li>
+            <a href="mailto: devrogdesign@gmail.com" className="footer__link anim-destination">
+              <span data-hover="devrogdesign@gmail.com">devrogdesign@gmail.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+59176803087" className="footer__link anim-destination">
+              <span data-hover="+591 (768) 030 87">+591 (768) 030 87</span>
+            </a>
+          </li>
       </ul>
     </div>
 
     <div className="footer__content">
-      <h3 className="footer__title">Let's be friends</h3>
+      <h3 className="footer__title">Seamos amigos</h3>
       <div className="footer__social_container">
-        <a
-          href="https://www.facebook.com"
-          target="_blank"
-          className="footer__social"
-        >
-          <box-icon name="facebook" type="logo" color="#32353E"></box-icon>
-        </a>
-        <a
-          href="https://www.instagram.com"
-          target="_blank"
-          className="footer__social"
-        >
-          <box-icon name="instagram" type="logo" color="#32353E"></box-icon>
-        </a>
-        <a
-          href="https://www.linkedin.com"
-          target="_blank"
-          className="footer__social"
-        >
-          <box-icon name="linkedin" type="logo" color="#32353E"></box-icon>
-        </a>
-        <a
-          href="https://www.behance.net"
-          target="_blank"
-          className="footer__social"
-        >
-          <box-icon name="behance" type="logo" color="#32353E"></box-icon>
-        </a>
-        <a
-          href="https://www.dribbble.com/"
-          target="_blank"
-          className="footer__social"
-        >
-          <box-icon name="dribbble" type="logo" color="#32353E"></box-icon>
-        </a>
+        {Content.social.map((item, index) => (
+          <a href={item.url} target="_blank" rel="noreferrer" className="footer__social">
+            <box-icon
+              name={item.iconName}
+              type="logo"
+              color="#32353E"
+              animation="tada-hover"
+            ></box-icon>
+          </a>
+        ))}
       </div>
     </div>
 
     <div className="footer__content">
       <h3 className="footer__title">Menu</h3>
       <ul>
-        <li>
-          <Link to="#" className="footer__link">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="#" className="footer__link">
-            My story
-          </Link>
-        </li>
-        <li>
-          <Link to="#" className="footer__link">
-            My works
-          </Link>
-        </li>
-        <li>
-          <Link to="#" className="footer__link">
-            As work
-          </Link>
-        </li>
-        <li>
-          <Link to="#" className="footer__link">
-            Resume
-          </Link>
-        </li>
-        <li>
-          <Link to="#" className="footer__link">
-            Contact
-          </Link>
-        </li>
+        {Content.menu.map((item, index) => (
+          <li key={index}>
+            <Link to={item.url} className="footer__link anim-destination">
+              <span data-hover={item.dataHover}>{item.title}</span>
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   </div>

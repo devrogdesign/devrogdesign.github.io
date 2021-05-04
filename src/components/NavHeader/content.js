@@ -1,33 +1,33 @@
 const Content = [
   {
-    title: "Home",
-    dataHover: "Home", 
+    title: "Inicio",
+    dataHover: "Inicio", 
     url: "/"
   },
   {
-    title: "My story",
-    dataHover: "My story",
+    title: "Mi historia",
+    dataHover: "Mi historia",
     url: "/my-story/"
   },
   {
-    title: "My works",
-    dataHover: "My works",
-    url: "/my-works/"
+    title: "Mis trabajos",
+    dataHover: "Mis trabajos",
+    url: "/#my-works"
   },
   {
-    title: "As work",
-    dataHover: "As work",
-    url: "/as-work/"
+    title: "Mi proceso",
+    dataHover: "Mi proceso",
+    url: "/#as-work"
   },
+  /*{
+    title: "Currículum",
+    dataHover: "Currículum",
+    url: "/my-story/#resume"
+  },*/
   {
-    title: "Resume",
-    dataHover: "Resume",
-    url: "/resume/"
-  },
-  {
-    title: "Contact",
-    dataHover: "Contact",
-    url: "/contact-us/"
+    title: "Contacto",
+    dataHover: "Contacto",
+    url: "https://t3bjfizqpcg.typeform.com/to/G9DIndPO"
   }
 ]
 

@@ -2,21 +2,23 @@ import React from "react"
 import ButtonLink from "../ButtonLink"
 
 const About = () => (
-  <section className="about section" id="about">
+  <section className="about section section__padding-off" id="about">
     <div className="bd-container">
-      <div className="about__container">
+      <div className="about__container wrapper wrapper__center">
         <h2 className="section-title biggest-title">
-          I think differently,
-          <br /> I create beautiful experiences
+          Pienso de forma diferente,
+          <br /> creo hermosas experiencias
         </h2>
-        <p className="about__description support-copy">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s
+        <p className="about__description support-copy font-bold">
+          Un poco sobre mí, me apasiona el diseño, pero diseñar teniendo en
+          cuenta la experiencia del usuario, no solo quiero hacer productos
+          bonitos sino también usables. Me gustaría ayudarte a descubrir la
+          mejor solución para tus necesidades y las de tus usuarios para
+          encaminar tu negocio hacia el éxito.
         </p>
-      </div>
-      <div className="section-support-content">
-        <ButtonLink href='#'>More about me</ButtonLink>
+        <div className="section-support-content">
+          <ButtonLink href="/my-story">Más sobre mi</ButtonLink>
+        </div>
       </div>
     </div>
   </section>

@@ -15,7 +15,8 @@ class NavHeader extends Component {
   render() {
     return (
       <nav className="nav bd-container">
-        <span href="#" className="nav__logo"></span>
+        <Link to="/#"><span className="nav__logo"></span></Link>
+        
 
         <div
           className={this.state.clicked ? "nav__menu active" : "nav__menu"}
@@ -31,7 +32,7 @@ class NavHeader extends Component {
             ))}
           </ul>
         </div>
-        <div className="nav__toggle" id="nav-toggle" onClick={this.handleClick}>
+        <div role="menu" tabIndex={0} className="nav__toggle" id="nav-toggle" onClick={this.handleClick} onKeyDown={this.handleClick}>
           <div className="box__icon">
             <box-icon
               name={this.state.clicked ? "x" : "menu-alt-right"}

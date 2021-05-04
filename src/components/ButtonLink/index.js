@@ -1,22 +1,20 @@
 import React from "react"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
 const ButtonLink = ({ children, href }) => (
-  <a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
+  <Link to={href}
     className="button-link button-link-animation"
   >
     <span>{children}</span>
-    <box-icon
-      className="button-link__icon"
+      <box-icon className="button-link__icon"
       name="right-arrow-alt"
       type="regular"
       size="1.2rem"
       color="#F31658"
-    ></box-icon>
-  </a>
+      ></box-icon>
+      
+  </Link>
 )
 
 ButtonLink.propTypes = {

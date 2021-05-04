@@ -2,23 +2,24 @@ import React, { useEffect, useRef, useState } from "react"
 import NavHeader from "../NavHeader"
 
 const Header = () => {
-  const [scroll, setScroll] = useState(window.scrollY)
+  const windowGlobal = typeof window !== 'undefined' && window;
+  const [scroll, setScroll] = useState(windowGlobal.scrollY)
   const heroRef = useRef()
 
   useEffect(() => {
-    window.addEventListener("scroll", toggle)
-    window.addEventListener("load", toggle)
-    window.addEventListener("resize", toggle)
+    windowGlobal.addEventListener("scroll", toggle)
+    windowGlobal.addEventListener("load", toggle)
+    windowGlobal.addEventListener("resize", toggle)
     return () => {
-      window.removeEventListener("scroll", toggle)
-      window.removeEventListener("load", toggle)
-      window.removeEventListener("resize", toggle)
+      windowGlobal.removeEventListener("scroll", toggle)
+      windowGlobal.removeEventListener("load", toggle)
+      windowGlobal.removeEventListener("resize", toggle)
     }
-  }, [window.scrollY])
+  }, [windowGlobal.scrollY])
 
   const toggle = () => {
-    heroRef.current.classList.toggle("header--hidden", scroll < window.scrollY)
-    setScroll(window.scrollY)
+    heroRef.current.classList.toggle("header--hidden", scroll < windowGlobal.scrollY)
+    setScroll(windowGlobal.scrollY)
   }
 
   return (

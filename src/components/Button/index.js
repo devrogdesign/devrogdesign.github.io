@@ -1,5 +1,5 @@
 import React from "react"
-import PropTypes from "prop-types"
+import { Link } from "gatsby"
 const VARIANTS = [
   "button-cta",
   "button-regular--solid",
@@ -7,12 +7,12 @@ const VARIANTS = [
 ]
 const ICONS = ["right-arrow-alt"]
 const SPACE = ["home-button-cta"]
-const Button = ({ children, variant, icon, space }) => {
+const Button = ({ children, href, variant, icon, space }) => {
     const checkVariant = VARIANTS.includes(variant) ? variant : "";
     const checkIcon = ICONS.includes(icon) ? icon : false;
     const checkSpace = SPACE.includes(space) ? space : SPACE[0];
   return (
-<a download="" href="#" className={`button ${checkVariant} ${checkSpace}`}>
+<Link to={href} className={`button ${checkVariant} ${checkSpace}`}>
     <span>{children}</span>
     {checkIcon
         ? <box-icon
@@ -26,7 +26,7 @@ const Button = ({ children, variant, icon, space }) => {
         : ""
       } 
     
-  </a>
+  </Link>
   )
 }
 

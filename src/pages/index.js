@@ -1,5 +1,5 @@
 import React from "react"
-import Boxicons from "boxicons"
+import "boxicons" 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
