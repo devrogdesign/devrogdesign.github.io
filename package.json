@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "devrogdesign",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Portfolio Website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Rodrigo García <devrog.design@gmail.com>",
   "dependencies": {
     "@botpoison/browser": "^0.1.16",
     "boxicons": "^2.0.7",

@@ -1,9 +1,9 @@
 module.exports = {
-  pathPrefix: "portfolio-devrog-starter",
+  pathPrefix: "devrogdesign.github.io",
   siteMetadata: {
-    title: `Devrog`,
-    description: `Portfolio Devrog | UI Designer & Web Developer`,
-    author: `Rodrigo García | Devrog`,
+    title: `devrogdesign`,
+    description: `Portfolio devrogdesign | Diseñador UI & Desarrollador Web`,
+    author: `Rodrigo García | devrogdesign`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
