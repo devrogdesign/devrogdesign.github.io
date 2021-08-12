@@ -1,35 +1,4 @@
 /*===== FONTS =====*/
-@font-face {
-  font-family: "TT Norms Pro Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("TT Norms Pro Regular"),
-    url("../../static/assets/fonts/TT-Norms-Pro-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "TT Norms Pro Medium";
-  font-style: normal;
-  font-weight: normal;
-  src: local("TT Norms Pro Medium"),
-    url("../../static/assets/fonts/TT-Norms-Pro-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "TT Norms Pro Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("TT Norms Pro Bold"),
-    url("../../static/assets/fonts/TT-Norms-Pro-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "TT Norms Pro ExtraBold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("TT Norms Pro ExtraBold"),
-    url("../../static/assets/fonts/TT-Norms-Pro-ExtraBold.woff") format("woff");
-}
 
 @font-face {
   font-family: 'Konnect Regular';
