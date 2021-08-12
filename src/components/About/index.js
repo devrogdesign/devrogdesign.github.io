@@ -9,7 +9,7 @@ const About = () => (
           Pienso de forma diferente,
           <br /> creo hermosas experiencias
         </h2>
-        <p className="about__description support-copy font-bold">
+        <p className="about__description support-copy text-xl font-medium">
           Un poco sobre mí, me apasiona el diseño, pero diseñar teniendo en
           cuenta la experiencia del usuario, no solo quiero hacer productos
           bonitos sino también usables. Me gustaría ayudarte a descubrir la

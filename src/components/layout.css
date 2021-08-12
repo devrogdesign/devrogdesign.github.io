@@ -30,6 +30,47 @@
   src: local("TT Norms Pro ExtraBold"),
     url("../../static/assets/fonts/TT-Norms-Pro-ExtraBold.woff") format("woff");
 }
+
+@font-face {
+  font-family: 'Konnect Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Konnect Regular'), url('../../static/assets/fonts/KonnectRegular.woff') format('woff');
+  }
+
+  @font-face {
+  font-family: 'Konnect Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Konnect Medium'), url('../../static/assets/fonts/KonnectMedium.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Konnect SemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Konnect SemiBold'), url('../../static/assets/fonts/KonnectSemiBold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Konnect Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Konnect Bold'), url('../../static/assets/fonts/KonnectBold.woff') format('woff');
+  }
+
+  @font-face {
+  font-family: 'Konnect ExtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Konnect ExtraBold'), url('../../static/assets/fonts/KonnectExtraBold.woff') format('woff');
+  }
+  
+
+  
+
 /*===== VARIABLES CSS =====*/
 :root {
   --space-unit:  1em;
@@ -56,7 +97,7 @@
   --button-link-color: var(--accent-color);
 
   /*===== Font and typography =====*/
-  --body-font: 'TT Norms Pro', sans-serif;
+  --body-font: 'Konnect', sans-serif;
 
   /*--biggest-font-size: 2.5rem;
   --h1-font-size: 1.5rem;
@@ -287,7 +328,7 @@ img {
 .knowledge .section-subtitle,
 .tools .section-subtitle,
 .resume .section-subtitle  {
-  color: #b3bcda;
+  color: rgb(54, 55, 56)8;
   font-weight: var(--font-normal);
   font-size: var(--normal-font-size);
 }
@@ -572,7 +613,7 @@ background-image: linear-gradient(117deg, #64adf0 0%, #f193e7 34%, #f8f7a9 68%, 
   background-color: var(--alice-blue-color);
   color: var(--text-color);
   padding: 1rem 2rem;
-  border-radius: 1.25rem;
+  border-radius: 1rem;
   box-shadow: 0px 16px 32px rgba(1, 1, 1, 0.16);
   -webkit-transform: translateY(var(--y));
           transform: translateY(var(--y));
@@ -683,7 +724,7 @@ color: var(--heading-color);
 
 .card{
 overflow: hidden;
-border-radius: 56px;
+border-radius: 2rem;
 transition: .4s;
 background-color: var(--cards-color);
 box-shadow: 0px 16px 60px rgba(1, 1, 1, 0.12);
@@ -780,7 +821,7 @@ color: var(--black-color);
 background-color: var(--alice-blue-color);
 padding: 12px;
 width: fit-content;
-border-radius: 20px;
+border-radius: 1rem;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -830,7 +871,7 @@ margin-right: 8px;
 .knowledge__subcontainer{
   background-color: var(--primary-color);
     box-shadow: 0px 16px 60px rgba(1, 1, 1, 0.12);
-border-radius: 56px;
+border-radius: 2rem;
     padding: 5rem;
   display: flex;
   flex-direction: column;
@@ -847,8 +888,8 @@ color: #fff;
 text-align: center;
 white-space: nowrap;
 vertical-align: baseline;
-border-radius: 8px;
-margin-bottom: 8px;
+border-radius: .375rem;
+margin-bottom: .5rem;
 }
 
 .label-blue {
@@ -875,7 +916,7 @@ margin-bottom: 42px;
 overflow: hidden;
 cursor: pointer;
 padding: 16px;
-border-radius: 56px;
+border-radius: 2rem;
 background-color: var(--primary-color);
 transition: .4s;
 box-shadow: 0px 16px 60px rgba(1, 1, 1, 0.12);
@@ -886,7 +927,7 @@ margin: 0;
 padding: 0;
 max-height: auto;
 overflow: hidden;
-border-radius: 44px;
+border-radius: 1.5rem;
 }
 
 .project__data{
@@ -1068,7 +1109,7 @@ color: var(--text-color);
     margin: 0;
   }
   .home__container {
-    padding-top: 200px;
+    padding-top: 7.5rem;
   }
 
   .home__data {
@@ -1089,7 +1130,7 @@ color: var(--text-color);
   }
 
   .support-copy {
-    max-width: 50%;
+    max-width: 70%;
     text-align: center;
   }
 
