@@ -1,43 +1,5 @@
 /*===== FONTS =====*/
 
-/*@font-face {
-  font-family: 'Konnect Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Konnect Regular'), url('../../static/assets/fonts/KonnectRegular.woff') format('woff');
-  }
-
-  @font-face {
-  font-family: 'Konnect Medium';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Konnect Medium'), url('../../static/assets/fonts/KonnectMedium.woff') format('woff');
-  }
-  
-
-  @font-face {
-  font-family: 'Konnect SemiBold';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Konnect SemiBold'), url('../../static/assets/fonts/KonnectSemiBold.woff') format('woff');
-  }
-  
-
-  @font-face {
-  font-family: 'Konnect Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Konnect Bold'), url('../../static/assets/fonts/KonnectBold.woff') format('woff');
-  }
-
-  @font-face {
-  font-family: 'Konnect ExtraBold';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Konnect ExtraBold'), url('../../static/assets/fonts/KonnectExtraBold.woff') format('woff');
-  }
-  */
-  
   @font-face {
     font-family: 'Konnect';
     src: url('../../static/assets/fonts/Konnect-Bold.eot');
@@ -374,7 +336,7 @@ img {
 .knowledge .section-subtitle,
 .tools .section-subtitle,
 .resume .section-subtitle  {
-  color: rgb(54, 55, 56)8;
+  color: #8B97BD;
   font-weight: var(--font-normal);
   font-size: var(--normal-font-size);
 }
