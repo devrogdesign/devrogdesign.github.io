@@ -4,14 +4,19 @@
   font-family: 'Konnect Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('Konnect Regular'), url('../../static/assets/fonts/KonnectRegular.woff') format('woff');
+  src: local('Konnect Regular'), 
+  url('../../static/assets/fonts/KonnectRegular.woff') format('woff'),
+  url('../../static/assets/fonts/KonnectRegular.ttf') format('truetype'),
+  ;
   }
 
   @font-face {
   font-family: 'Konnect Medium';
   font-style: normal;
   font-weight: normal;
-  src: local('Konnect Medium'), url('../../static/assets/fonts/KonnectMedium.woff') format('woff');
+  src: local('Konnect Medium'), 
+  url('../../static/assets/fonts/KonnectMedium.woff') format('woff'),
+  url('../../static/assets/fonts/KonnectMedium.ttf') format('truetype');
   }
   
 
@@ -19,7 +24,9 @@
   font-family: 'Konnect SemiBold';
   font-style: normal;
   font-weight: normal;
-  src: local('Konnect SemiBold'), url('../../static/assets/fonts/KonnectSemiBold.woff') format('woff');
+  src: local('Konnect SemiBold'), 
+  url('../../static/assets/fonts/KonnectSemiBold.woff') format('woff'),
+  url('../../static/assets/fonts/KonnectSemiBold.ttf') format('truetype');
   }
   
 
@@ -27,14 +34,18 @@
   font-family: 'Konnect Bold';
   font-style: normal;
   font-weight: normal;
-  src: local('Konnect Bold'), url('../../static/assets/fonts/KonnectBold.woff') format('woff');
+  src: local('Konnect Bold'), 
+  url('../../static/assets/fonts/KonnectBold.woff') format('woff'),
+  url('../../static/assets/fonts/KonnectBold.ttf') format('truetype');
   }
 
   @font-face {
   font-family: 'Konnect ExtraBold';
   font-style: normal;
   font-weight: normal;
-  src: local('Konnect ExtraBold'), url('../../static/assets/fonts/KonnectExtraBold.woff') format('woff');
+  src: local('Konnect ExtraBold'), 
+  url('../../static/assets/fonts/KonnectExtraBold.woff') format('woff'),
+  url('../../static/assets/fonts/KonnectExtraBold.ttf') format('truetype');
   }
   
 
