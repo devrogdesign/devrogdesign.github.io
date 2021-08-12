@@ -4,8 +4,8 @@
   font-family: 'Konnect Regular';
   font-style: normal;
   font-weight: normal;
-  src:  url('../../static/assets/fonts/konnectregular.eot') format('eot');
-  src:  url('../../static/assets/fonts/konnectregular.eot?#iefix') format('embedded-opentype'),
+  src: local('Konnect Regular'), url('../../static/assets/fonts/konnectregular.eot') format('eot');
+  src: local('Konnect Regular'), url('../../static/assets/fonts/konnectregular.eot?#iefix') format('embedded-opentype'),
         url('../../static/assets/fonts/konnectregular.woff2') format('woff2'),
         url('../../static/assets/fonts/konnectregular.woff') format('woff'),
         url('../../static/assets/fonts/konnectregular.ttf') format('truetype');
@@ -15,8 +15,8 @@
   font-family: 'Konnect Medium';
   font-style: normal;
   font-weight: normal;
-  src:  url('../../static/assets/fonts/konnectmedium.eot') format('eot');
-  src:  url('../../static/assets/fonts/konnectmedium.eot?#iefix') format('embedded-opentype'),
+  src: local('Konnect Medium'), url('../../static/assets/fonts/konnectmedium.eot') format('eot');
+  src: local('Konnect Medium'), url('../../static/assets/fonts/konnectmedium.eot?#iefix') format('embedded-opentype'),
         url('../../static/assets/fonts/konnectmedium.woff2') format('woff2'),
         url('../../static/assets/fonts/konnectmedium.woff') format('woff'),
         url('../../static/assets/fonts/konnectmedium.ttf') format('truetype');
@@ -27,8 +27,8 @@
   font-family: 'Konnect SemiBold';
   font-style: normal;
   font-weight: normal;
-  src:  url('../../static/assets/fonts/konnectsemibold.eot') format('eot');
-  src:  url('../../static/assets/fonts/konnectsemibold.eot?#iefix') format('embedded-opentype'),
+  src: local('Konnect SemiBold'), url('../../static/assets/fonts/konnectsemibold.eot') format('eot');
+  src: local('Konnect SemiBold'), url('../../static/assets/fonts/konnectsemibold.eot?#iefix') format('embedded-opentype'),
         url('../../static/assets/fonts/konnectsemibold.woff2') format('woff2'),
         url('../../static/assets/fonts/konnectsemibold.woff') format('woff'),
         url('../../static/assets/fonts/konnectsemibold.ttf') format('truetype');
@@ -39,8 +39,8 @@
   font-family: 'Konnect Bold';
   font-style: normal;
   font-weight: normal;
-  src:  url('../../static/assets/fonts/konnectbold.eot') format('eot');
-  src:  url('../../static/assets/fonts/konnectbold.eot?#iefix') format('embedded-opentype'),
+  src: local('Konnect Bold'), url('../../static/assets/fonts/konnectbold.eot') format('eot');
+  src: local('Konnect Bold'), url('../../static/assets/fonts/konnectbold.eot?#iefix') format('embedded-opentype'),
         url('../../static/assets/fonts/konnectbold.woff2') format('woff2'),
         url('../../static/assets/fonts/konnectbold.woff') format('woff'),
         url('../../static/assets/fonts/konnectbold.ttf') format('truetype');
@@ -50,8 +50,8 @@
   font-family: 'Konnect ExtraBold';
   font-style: normal;
   font-weight: normal;
-  src:  url('../../static/assets/fonts/konnectextrabold.eot') format('eot');
-  src:  url('../../static/assets/fonts/konnectextrabold.eot?#iefix') format('embedded-opentype'),
+  src: local('Konnect ExtraBold'), url('../../static/assets/fonts/konnectextrabold.eot') format('eot');
+  src: local('Konnect ExtraBold'), url('../../static/assets/fonts/konnectextrabold.eot?#iefix') format('embedded-opentype'),
         url('../../static/assets/fonts/konnectextrabold.woff2') format('woff2'),
         url('../../static/assets/fonts/konnectextrabold.woff') format('woff'),
         url('../../static/assets/fonts/konnectextrabold.ttf') format('truetype');
