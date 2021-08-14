@@ -618,11 +618,10 @@ background-image: linear-gradient(117deg, #64adf0 0%, #f193e7 34%, #f8f7a9 68%, 
   display: inline-flex;
   align-items: center;
   font-size: var(--small-font-size);
-  background-color: var(--alice-blue-color);
-  color: var(--text-color);
+  color: #504ffb;
   padding: 1rem 2rem;
+  border: solid 1px #504ffb;
   border-radius: 1rem;
-  box-shadow: 0px 16px 32px rgba(1, 1, 1, 0.16);
   -webkit-transform: translateY(var(--y));
           transform: translateY(var(--y));
   -webkit-transition: box-shadow var(--duration) ease, -webkit-transform var(--duration) ease;
@@ -633,7 +632,8 @@ background-image: linear-gradient(117deg, #64adf0 0%, #f193e7 34%, #f8f7a9 68%, 
 
 .button:hover {
   --y: var(--move-hover);
-  background-color: #EDEDE8;
+  background-color: #f4f4ff;
+  border: solid 1px #0100CC;
 }
 
 .button-cta {
@@ -660,13 +660,18 @@ background-image: linear-gradient(117deg, #64adf0 0%, #f193e7 34%, #f8f7a9 68%, 
 
 .button-link {
   color: var(--button-link-color);
-  font-size: var(--normal-font-size);
+  font-size: var(--h3-font-size);
   font-weight: var(--font-bold);
   letter-spacing: var(--small-caps-font-letter-spacing);
   display: flex;
   align-items: center;
-  
+  transition: scaleX .8s cubic-bezier(.694,0,.335,1),color .8s cubic-bezier(.694,0,.335,1);
 }
+
+.button-link:hover {
+  color: #cc2a5a;
+}
+
 .button-link-animation:hover box-icon {
   color: #F31658;
   transform: translate(.8rem);
@@ -731,6 +736,9 @@ color: var(--heading-color);
 /*===== SERVICES =====*/
 
 .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 overflow: hidden;
 border-radius: 2rem;
 transition: .4s;
@@ -852,6 +860,11 @@ margin-top: 42px;
 width: 100%;
 padding: 0 42px;
 margin-top: 16px;
+}
+
+.card__action {
+  width: 100%;
+  padding: 0 42px;
 }
 
 .card:hover{
@@ -1055,6 +1068,9 @@ color: var(--text-color);
 
 /*=== Resolucion CELULARES ===*/
 @media screen and (min-width: 280px){ 
+  .as-work .bd-grid {
+    gap: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 375px) {
@@ -1088,6 +1104,7 @@ color: var(--text-color);
     align-items: flex-start;
   }
 
+  
   
 }
 

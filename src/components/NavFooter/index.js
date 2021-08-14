@@ -14,7 +14,7 @@ const NavFooter = () => (
       </span>
       <div className="footer__copy_container">
         <p className="footer__copy">
-          &#169; 2020 Rodrigo García. All right reserved.
+          &#169; 2021 Rodrigo García. All right reserved.
         </p>
         <p className="footer__copy">
           Designer & Coded with <box-icon

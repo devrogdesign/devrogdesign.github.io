@@ -35,10 +35,13 @@ const Services = () => (
               <li className="label label-red">Ecommerce</li>
               <li className="label label-red">Webs con Webflow o Wordpress</li>
             </ul>
-            <a href="https://t3bjfizqpcg.typeform.com/to/G9DIndPO" className="button">
+            
+          </div>
+        </div>
+        <div className="card__action">
+        <a href="https://t3bjfizqpcg.typeform.com/to/G9DIndPO" className="button">
             Necesito esto
             </a>
-          </div>
         </div>
       </div>
       <div className="card">
@@ -65,10 +68,13 @@ const Services = () => (
               <li className="label label-blue">Sistema de Diseño</li>
               <li className="label label-blue">Diseño UX/UI</li>
             </ul>
-            <a href="https://t3bjfizqpcg.typeform.com/to/G9DIndPO" className="button">
+            
+          </div>
+        </div>
+        <div className="card__action">
+        <a href="https://t3bjfizqpcg.typeform.com/to/G9DIndPO" className="button">
             Necesito esto
             </a>
-          </div>
         </div>
       </div>
       <div className="card">
@@ -87,6 +93,7 @@ const Services = () => (
         </div>
 
         <div className="card__content">
+         
           <div className="tag-services">
             <ul>
               <li className="label label-green">Frontend con React</li>
@@ -96,10 +103,13 @@ const Services = () => (
             </ul>
             
           </div>
+          
+        </div>
+        <div className="card__action">
           <a href="https://t3bjfizqpcg.typeform.com/to/G9DIndPO" className="button">
               Necesito esto
             </a>
-        </div>
+          </div>
       </div>
     </div>
     <div className="section-support-content">

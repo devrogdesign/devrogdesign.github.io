@@ -10,7 +10,7 @@ const ButtonLink = ({ children, href }) => (
       <box-icon className="button-link__icon"
       name="right-arrow-alt"
       type="regular"
-      size="1.2rem"
+      size="1.8rem"
       color="#F31658"
       ></box-icon>
       
