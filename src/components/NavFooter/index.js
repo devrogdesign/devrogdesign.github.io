@@ -38,7 +38,7 @@ const NavFooter = () => (
           </li>
           <li>
             <a href="tel:+59176803087" className="footer__link anim-destination">
-              <span data-hover="+591 (768) 030 87">+591 (768) 030 87</span>
+              <span data-hover="+591 (768) 030 87">+591 (718) 985 80</span>
             </a>
           </li>
       </ul>
